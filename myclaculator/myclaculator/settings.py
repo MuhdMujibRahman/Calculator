@@ -25,10 +25,12 @@ SECRET_KEY = 'k%7!(%%#f8un8-2+_!!v(z0#2-8x&6*30jp04(x+(+wi1o+s&w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    os.path.join(BASE_DIR, "static"),
-]
+ALLOWED_HOSTS = []
 
+STATICFILES_DIRS=[
+    os.path.join(BASE_DIR, "static"),
+    
+]
 
 # Application definition
 
@@ -39,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'myapp',
+    'app',
 ]
 
 MIDDLEWARE = [

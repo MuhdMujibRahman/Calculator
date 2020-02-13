@@ -1,0 +1,80 @@
+body {
+    background-color: #e6e6e6;
+}
+.calc-screen {
+    height: 100px;
+    background-color: #fff;
+    width: 300px;
+    margin-left: -15px;
+    border-radius: 10px 10px 0px 0px;
+}
+.calc-input {
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #999999;
+    font-family: 'Montserrat', sans-serif;
+}
+.calc-result {
+    padding-right: 20px;
+    text-align: right;
+    font-size: 40px;
+    font-weight: 400;
+    font-weight: 400;
+    color: #228dfa;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    width: 300px;
+    margin-top: 75px;
+    box-shadow: 10px 10px 10px #D7D7D7;
+}
+.key,
+.corner-key {
+    background-color: #1b1b27;
+    color: #fff;
+    /*width: 60px; */
+    
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 32px;
+    line-height: 60px;
+}
+.key > a,
+.corner-key > a {
+    color: #fff;
+    text-decoration: none;
+}
+.key > a:hover,
+.key > a:active,
+.corner-key > a:hover,
+.corner-key > a:active {
+    color: #228dfa;
+}
+.key:not(:last-child) {
+    border-right: 3px solid #12121a;
+    border-bottom: 4px solid #12121a;
+}
+.key+ .key {
+    border-left: 2px solid #12121a;
+    border-bottom: 4px solid #12121a;
+    margin-bottom: -1px;
+}
+.corner-key.middle {
+    border-right: 3px solid #12121a;
+    border-left: 2px solid #12121a;
+}
+.calc-keys {
+    font-family: 'Montserrat', sans-serif;
+}
+.corner-key.right {
+    border-radius: 0px 0px 10px 0px;
+    border-left: 2px solid #12121a;
+}
+.corner-key.left {
+    border-radius: 0px 0px 0px 10px;
+    border-right: 2px solid #12121a;
+}
